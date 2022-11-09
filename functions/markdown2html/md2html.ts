@@ -18,24 +18,16 @@ import 'https://esm.sh/prismjs@1.27.0/components/prism-json?no-check';
 import 'https://esm.sh/prismjs@1.27.0/components/prism-jsx?no-check';
 import 'https://esm.sh/prismjs@1.27.0/components/prism-kotlin?no-check';
 import 'https://esm.sh/prismjs@1.27.0/components/prism-less?no-check';
-import 'https://esm.sh/prismjs@1.27.0/components/prism-lua?no-check';
-import 'https://esm.sh/prismjs@1.27.0/components/prism-makefile?no-check';
 import 'https://esm.sh/prismjs@1.27.0/components/prism-nginx?no-check';
-import 'https://esm.sh/prismjs@1.27.0/components/prism-objectivec?no-check';
 import 'https://esm.sh/prismjs@1.27.0/components/prism-python?no-check';
-import 'https://esm.sh/prismjs@1.27.0/components/prism-ruby?no-check';
 import 'https://esm.sh/prismjs@1.27.0/components/prism-rust?no-check';
 import 'https://esm.sh/prismjs@1.27.0/components/prism-sass?no-check';
 import 'https://esm.sh/prismjs@1.27.0/components/prism-scss?no-check';
 import 'https://esm.sh/prismjs@1.27.0/components/prism-sql?no-check';
-import 'https://esm.sh/prismjs@1.27.0/components/prism-stylus?no-check';
-import 'https://esm.sh/prismjs@1.27.0/components/prism-swift?no-check';
 import 'https://esm.sh/prismjs@1.27.0/components/prism-toml?no-check';
 import 'https://esm.sh/prismjs@1.27.0/components/prism-tsx?no-check';
 import 'https://esm.sh/prismjs@1.27.0/components/prism-typescript?no-check';
-import 'https://esm.sh/prismjs@1.27.0/components/prism-wasm?no-check';
 import 'https://esm.sh/prismjs@1.27.0/components/prism-yaml?no-check';
-import 'https://esm.sh/prismjs@1.27.0/components/prism-zig?no-check';
 
 export const md2html = (md: string, pageTitle = '') => {
   const title = md.match(/^# (.+)\n?/g)?.[0].slice(2) || pageTitle;
