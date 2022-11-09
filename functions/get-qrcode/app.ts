@@ -4,7 +4,7 @@ import { fetchReadmeToHtml, PORT } from '../../utils/index.ts';
 async function handleRequest(request: Request) {
   const url = new URL(request.url);
 
-  if (url.pathname === '/') {
+  if (!url.searchParams.get('text')) {
     return await fetchReadmeToHtml(import.meta.url);
   }
 
