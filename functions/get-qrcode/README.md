@@ -1,9 +1,16 @@
 # Get QR Code API
 
-Get a customizable QR code image by passing a `text` param and other optional params, such as `border`, `color`, `bgColor` and [more](https://github.com/vikiboss/deno-functions/tree/main/functions/get-qrcode#usage).
+Get QR code image by passing a `text` parameter and optional `size`.
 
 # Usage
 
-WIP
+```ts
+const api = 'https://get-qrcode.deno.dev';
+
+const text = 'Hello World';
+const size = 256;
+
+const res = await fetch(`${api}?text=${text}&size=${size}`, {});
+```
 
 [⬅ back to list](https://viki.deno.dev/)
