@@ -1,5 +1,4 @@
 import { path } from '../deps.ts';
-import { dirname } from './dirname.ts';
 
 const MD_TO_HTML_API = Deno.env.get('DEV')
   ? 'http://localhost:3000'
@@ -8,7 +7,8 @@ const MD_TO_HTML_API = Deno.env.get('DEV')
 const README_FILE_NAME = 'README.md';
 
 export const fetchReadmeToHtml = async (metaUrl: string) => {
-  const readmePath = path.join(dirname(metaUrl), README_FILE_NAME);
+  const { pathname } = new URL('.', metaUrl);
+  const readmePath = path.join(pathname, README_FILE_NAME);
 
   const markdownContent = await Deno.readTextFile(readmePath);
 
