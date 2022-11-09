@@ -12,3 +12,5 @@ Replace `api.github.com` in the API URL by `gh-api-proxy.deno.dev`.
 - https://api.github.com/users/vikiboss
 + https://gh-api-proxy.deno.dev/users/vikiboss
 ```
+
+[⬅ back to list](https://viki.deno.dev/)

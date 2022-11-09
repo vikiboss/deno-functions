@@ -12,3 +12,5 @@ Just open [https://google-proxy.deno.dev](https://google-proxy.deno.dev) to surf
 - www.google.com
 + google-proxy.deno.dev
 ```
+
+[⬅ back to list](https://viki.deno.dev/)

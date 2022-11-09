@@ -12,3 +12,5 @@ Replace `raw.githubusercontent.com` in the download URL by `gh-raw-proxy.deno.de
 - https://raw.githubusercontent.com/vikiboss/deno-functions/main/README.md
 + https://gh-raw-proxy.deno.dev/vikiboss/deno-functions/main/README.md
 ```
+
+[⬅ back to list](https://viki.deno.dev/)

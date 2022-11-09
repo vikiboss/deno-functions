@@ -12,3 +12,5 @@ Just open [https://gh-proxy.deno.dev](https://gh-proxy.deno.dev) to surfing on G
 - https://gitub.com/vikiboss/deno-functions
 + https://gh-proxy.deno.dev/vikiboss/deno-functions
 ```
+
+[⬅ back to list](https://viki.deno.dev/)
