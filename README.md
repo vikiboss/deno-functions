@@ -24,6 +24,10 @@ A set of useful serverless **functions** and **proxies** powered by [Deno](https
 
   Proxy for `github.com` to improve your GitHub browsing experience.
 
+- [**GitHub API Proxy**](https://github.com/vikiboss/deno-functions/tree/main/functions/gh-api-proxy): https://gh-api-proxy.deno.dev/usage
+
+  Proxy for `api.github.com`.
+
 - [**raw.githubusercontent.com Proxy**](https://github.com/vikiboss/deno-functions/tree/main/functions/gh-raw-proxy): https://gh-raw-proxy.deno.dev/usage
 
   Proxy for `raw.githubusercontent.com` to speed up your downloads on GitHub.
