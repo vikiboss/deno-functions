@@ -9,6 +9,6 @@ Proxy for `raw.githubusercontent.com` to speed up your downloads on GitHub.
 Replace `raw.githubusercontent.com` in the download URL by `gh-raw-proxy.deno.dev`.
 
 ```diff
-- raw.githubusercontent.com
-+ gh-raw-proxy.deno.dev
+- https://raw.githubusercontent.com/vikiboss/deno-functions/main/README.md
++ https://gh-raw-proxy.deno.dev/vikiboss/deno-functions/main/README.md
 ```

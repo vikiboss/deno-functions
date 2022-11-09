@@ -9,6 +9,6 @@ Proxy for `github.com` to improve your GitHub browsing experience.
 Just open [https://gh-proxy.deno.dev](https://gh-proxy.deno.dev) to surfing on GitHub.
 
 ```diff
-- gitub.com
-+ gh-proxy.deno.dev
+- https://gitub.com/vikiboss/deno-functions
++ https://gh-proxy.deno.dev/vikiboss/deno-functions
 ```
