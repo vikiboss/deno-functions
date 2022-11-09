@@ -1,5 +1,5 @@
 import { path, serve } from '../../deps.ts';
-import { dirname } from '../../utils/index.ts';
+import { dirname, PORT } from '../../utils/index.ts';
 import { md2html } from './md2html.ts';
 
 const README_PATH = path.join(dirname(import.meta.url), 'README.md');
@@ -23,7 +23,5 @@ async function handleRequest(request: Request) {
 
   return new Response(md2html(md, title), RES_OPTIONS);
 }
-
-const PORT = Number(Deno.env.get('PORT')) || 8000;
 
 serve(handleRequest, { port: PORT });
