@@ -2,6 +2,7 @@
   "tasks": {
     "dev:root": "deno run --allow-all --watch ./app.ts",
     "dev:get-qrcode": "deno run --allow-all --watch ./functions/get-qrcode/app.ts",
+    "dev:gh-proxy": "deno run --allow-all --watch ./functions/gh-proxy/app.ts",
     "dev:gh-raw-proxy": "deno run --allow-all --watch ./functions/gh-raw-proxy/app.ts",
     "dev:google-proxy": "deno run --allow-all --watch ./functions/google-proxy/app.ts",
     "dev:markdown2html": "deno run --allow-all --watch ./functions/markdown2html/app.ts",
