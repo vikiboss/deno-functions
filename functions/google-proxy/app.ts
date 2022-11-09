@@ -8,7 +8,7 @@ async function handleRequest(request: Request) {
     return await fetchReadmeToHtml(import.meta.url);
   }
 
-  url.hostname = 'www.goole.com';
+  url.hostname = 'www.google.com';
   url.port = '443';
   url.protocol = 'https:';
 
