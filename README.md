@@ -10,9 +10,9 @@ A set of useful serverless **functions** and **proxies** powered by [Deno](https
 
   Transform `Markdown` into `HTML` string, support many languages' sytax highlighting in code block.
 
-- [[WIP] **Get QR Code**](https://github.com/vikiboss/deno-functions/tree/main/functions/get-qrcode): http://get-qrcode.deno.dev
+- [**Get QR Code**](https://github.com/vikiboss/deno-functions/tree/main/functions/get-qrcode): http://get-qrcode.deno.dev
 
-  Get a customizable QR code image by passing a `text` param and other optional params, such as `border`, `color`, `bgColor` and [more](https://github.com/vikiboss/deno-functions/tree/main/functions/get-qrcode#usage).
+  Get QR code image by passing a `text` parameter and optional `size`.
 
 - [[WIP] **Text to Image**](https://github.com/vikiboss/deno-functions/tree/main/functions/text2img): https://text2img.deno.dev
 
