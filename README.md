@@ -6,7 +6,11 @@ A list of useful serverless functions powered by [deno](https://deno.land/) and 
 
 ## Functions
 
-- [gh-raw-proxy](https://github.com/vikiboss/deno-functions/tree/main/functions/gh-raw-proxy): https://gh-raw-proxy.deno.dev
+- [gh-proxy](https://github.com/vikiboss/deno-functions/tree/main/functions/gh-proxy): https://gh-proxy.deno.dev/usage
+
+  Proxy for `github.com` to improve your GitHub browsing experience.
+
+- [gh-raw-proxy](https://github.com/vikiboss/deno-functions/tree/main/functions/gh-raw-proxy): https://gh-raw-proxy.deno.dev/usage
 
   Proxy for `raw.githubusercontent.com` to speed up your downloads on GitHub.
 
@@ -16,7 +20,7 @@ A list of useful serverless functions powered by [deno](https://deno.land/) and 
 
 - [markdown2html](https://github.com/vikiboss/deno-functions/tree/main/functions/markdown2html): https://markdown2html.deno.dev
 
-  Transform Markdown into HTML string, support many languages' sytax highlighting in code block.
+  Transform `Markdown` into `HTML` string, support many languages' sytax highlighting in code block.
 
 - [[WIP] get-qrcode](https://github.com/vikiboss/deno-functions/tree/main/functions/get-qrcode): http://get-qrcode.deno.dev
 
@@ -24,7 +28,7 @@ A list of useful serverless functions powered by [deno](https://deno.land/) and 
 
 - [[WIP] text2img](https://github.com/vikiboss/deno-functions/tree/main/functions/text2img): https://text2img.deno.dev
 
-  Transform text into an image.
+  Transform `text` into an `image`.
 
 ## Thanks
 

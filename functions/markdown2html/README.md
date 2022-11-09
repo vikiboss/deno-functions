@@ -2,6 +2,8 @@
 
 [![github-label](https://img.shields.io/badge/gitub-000000?style=for-the-badge&logo=github)](https://github.com/vikiboss/deno-functions/tree/main/functions/markdown2html)
 
+Transform `Markdown` into `HTML` string, support many languages' sytax highlighting in code block.
+
 ## Usage
 
 ```ts

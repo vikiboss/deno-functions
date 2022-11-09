@@ -1,6 +1,6 @@
 # raw.githubusercontent.com Proxy
 
-[![github-label](https://img.shields.io/badge/gitub-000000?style=for-the-badge&logo=github)](https://github.com/vikiboss/deno-functions/tree/main/functions/google-proxy)
+[![github-label](https://img.shields.io/badge/gitub-000000?style=for-the-badge&logo=github)](https://github.com/vikiboss/deno-functions/tree/main/functions/gh-raw-proxy)
 
 Proxy for `raw.githubusercontent.com` to speed up your downloads on GitHub.
 
