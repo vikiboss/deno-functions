@@ -1,1 +1,0 @@
-export const dirname = (metaUrl: string) => new URL('.', metaUrl).pathname;
