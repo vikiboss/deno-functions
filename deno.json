@@ -8,5 +8,10 @@
     "dev:google-proxy": "deno run --allow-all --watch ./functions/google-proxy/app.ts",
     "dev:markdown2html": "PORT=3000 deno run --allow-all --watch ./functions/markdown2html/app.ts",
     "dev:text2img": "deno run --allow-all --watch ./functions/text2img/app.ts"
+  },
+  "lint": {
+    "rules": {
+      "exclude": ["no-explicit-any"]
+    }
   }
 }
