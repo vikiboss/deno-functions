@@ -1,6 +1,7 @@
 {
   "tasks": {
     "dev:root": "deno run --allow-all --watch ./app.ts",
+    "dev:baidu-baike": "deno run --allow-all --watch ./functions/baidu-baike/app.ts",
     "dev:get-qrcode": "deno run --allow-all --watch ./functions/get-qrcode/app.ts",
     "dev:gh-proxy": "deno run --allow-all --watch ./functions/gh-proxy/app.ts",
     "dev:gh-api-proxy": "deno run --allow-all --watch ./functions/gh-api-proxy/app.ts",
