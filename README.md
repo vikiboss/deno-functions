@@ -14,9 +14,9 @@ A set of useful serverless **functions** and **proxies** powered by [Deno](https
 
   Get QR code image by passing a `text` parameter and optional `size`.
 
-- [[WIP] **Text to Image**](https://github.com/vikiboss/deno-functions/tree/main/functions/text2img): https://text2img.deno.dev
+<!-- - [[WIP] **Text to Image**](https://github.com/vikiboss/deno-functions/tree/main/functions/text2img): https://text2img.deno.dev
 
-  Transform `text` into an `image`.
+  Transform `text` into an `image`. -->
 
 ## Proxies
 
