@@ -2,7 +2,7 @@
 
 Get QR code image by passing a `text` parameter and optional `size`.
 
-# Usage
+## Usage
 
 ```ts
 const api = 'https://get-qrcode.deno.dev';

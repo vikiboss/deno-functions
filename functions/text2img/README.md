@@ -2,7 +2,7 @@
 
 Transform `text` into an `image`.
 
-# Usage
+## Usage
 
 WIP
 
