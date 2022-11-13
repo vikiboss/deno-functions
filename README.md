@@ -4,13 +4,17 @@
 
 A set of useful serverless **functions** and **proxies** powered by [Deno](https://deno.land/) and deployed by [Deno Deploy](https://deno.dev/). They're fast!
 
-## Functions
+## Functions / API 函数
 
-- [**Markdown to HTML**](https://github.com/vikiboss/deno-functions/tree/main/functions/markdown2html): https://markdown2html.deno.dev
+- [**百度百科 API / Baidu Wiki API**](https://github.com/vikiboss/deno-functions/tree/main/functions/baidu-baike): https://baidu-baike.deno.dev
+
+  百度百科 API，获取词条信息、词条义项列表、历史上的今天。
+
+- [**MD 转 HTML API / MD to HTML API**](https://github.com/vikiboss/deno-functions/tree/main/functions/markdown2html): https://markdown2html.deno.dev
 
   Transform `Markdown` into `HTML` string, support many languages' sytax highlighting in code block.
 
-- [**Get QR Code**](https://github.com/vikiboss/deno-functions/tree/main/functions/get-qrcode): http://get-qrcode.deno.dev
+- [**生成二维码 API / Generate QR Code API**](https://github.com/vikiboss/deno-functions/tree/main/functions/get-qrcode): http://get-qrcode.deno.dev
 
   Get QR code image by passing a `text` parameter and optional `size`.
 
@@ -18,7 +22,7 @@ A set of useful serverless **functions** and **proxies** powered by [Deno](https
 
   Transform `text` into an `image`. -->
 
-## Proxies
+## Proxies / 代理
 
 - [**GitHub Proxy**](https://github.com/vikiboss/deno-functions/tree/main/functions/gh-proxy): https://gh-proxy.deno.dev/usage
 
