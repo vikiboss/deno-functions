@@ -1,6 +1,6 @@
 # Viki's Deno Functions
 
-[![github-label](https://img.shields.io/badge/gitub-source--code-000000?style=for-the-badge&logo=github)](https://github.com/vikiboss/deno-functions)
+[![github-label](https://img.shields.io/badge/gitub-source%20code-000000?style=for-the-badge&logo=github)](https://github.com/vikiboss/deno-functions)
 
 A set of useful serverless **functions** and **proxies** powered by [Deno](https://deno.land/) and deployed by [Deno Deploy](https://deno.dev/). They're fast!
 

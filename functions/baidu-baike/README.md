@@ -1,5 +1,7 @@
 # Baidu Bake API
 
+[![github-label](https://img.shields.io/badge/gitub-000000?style=for-the-badge&logo=github)](https://github.com/vikiboss/deno-functions/tree/main/functions/baidu-baike)
+
 Baidu Baike related API.
 
 ## Usage
