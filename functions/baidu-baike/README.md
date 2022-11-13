@@ -14,6 +14,7 @@ const itemRes = await fetch(itemUrl)
 const itemData = await itemRes.json()
 
 // fetch event list happening today in history
+// or just open https://baidu-baike.deno.dev/today_in_history
 const hisUrl = `${api}/today_in_history`
 const hisRes = await fetch(hisUrl)
 const hisData = await hisRes.json()
