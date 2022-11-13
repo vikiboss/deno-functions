@@ -13,19 +13,20 @@ async function handleRequest(request: Request) {
     return new Response(null)
   }
 
-  if (!params.get('text')) {
+  const text = params.get('text') || ''
+
+  if (!text) {
     return await fetchReadmeToHtml(import.meta.url)
   }
-
-  const text = params.get('text') || ''
 
   const option = {
     size: Number(params.get('size')) || DEFAULT_SIZE,
   }
 
+  const isBase64 = params.has('base64')
   const image = String(await qrcode(text, option))
 
-  return new Response(base64.toUint8Array(image.slice(SLICE_START)))
+  return new Response(isBase64 ? image : base64.toUint8Array(image.slice(SLICE_START)))
 }
 
 serve(handleRequest, { port: PORT })

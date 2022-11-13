@@ -12,7 +12,11 @@ const api = 'https://get-qrcode.deno.dev'
 const text = 'Hello World'
 const size = 256
 
-const res = await fetch(`${api}?text=${text}&size=${size}`, {})
+// blob data
+const res = await fetch(`${api}?text=${text}&size=${size}`)
+
+// base64 string (Data URI scheme: `data:image/gif;base64,xxxxxxxxxx`)
+const res = await fetch(`${api}?text=${text}&size=${size}&base64`)
 ```
 
 [⬅ back to list](https://viki.deno.dev/)
