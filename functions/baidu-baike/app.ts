@@ -1,6 +1,6 @@
 import { serve } from '../../deps.ts'
 import { dayjs } from './deps.ts'
-import { fetchReadmeToHtml, PORT, responseWithJson } from '../../utils/index.ts'
+import { fetchReadmeToHtml, PORT, responseWithBaseRes } from '../../utils/index.ts'
 
 interface MeaningItem {
   title: string
@@ -19,9 +19,12 @@ interface BaikeItem {
 interface HistoryItem {
   title: string
   year: string
+  desc: string
   type: 'birth' | 'death' | 'event'
   link: string
 }
+
+type AnyObject<T = any> = Record<number | string | symbol, T>
 
 // const itemCache = new Map<string, BaikeItem>()
 const eventCache = new Map<string, HistoryItem[]>()
@@ -46,22 +49,30 @@ async function handleRequest(request: Request) {
     const month = now.getMonth() + 1
 
     if (eventCache.has(today)) {
-      return responseWithJson(eventCache.get(today))
+      return responseWithBaseRes(eventCache.get(today))
     } else {
       const res = await fetch(getHistoryApi(month))
-      const monthEvents: Record<string, Record<string, HistoryItem[]>> = await res.json()
+      const monthEvents: AnyObject<AnyObject<AnyObject[]>> = await res.json()
       const todayEvents = monthEvents?.[String(month)]?.[todayField] ?? []
 
+      const modifiedTodayEvents = todayEvents.map((e) => ({
+        title: (e.title as string).replace(/<.*?>/g, ''),
+        year: e.year as string,
+        desc: (e.desc as string).replace(/<.*?>/g, ''),
+        type: e.type as 'birth' | 'death' | 'event',
+        link: e.link as string,
+      }))
+
       if (todayEvents.length) {
-        eventCache.set(today, todayEvents)
+        eventCache.set(today, modifiedTodayEvents)
       }
 
-      return responseWithJson(todayEvents)
+      return responseWithBaseRes(todayEvents)
     }
   }
 
   if (pathname === '/item') {
-    return responseWithJson({ status: 200 })
+    return responseWithBaseRes({}, 500, 'not implement yet for now')
 
     // const params = url.searchParams
     // const item = decodeURIComponent(params.get('item') ?? '').trim()
