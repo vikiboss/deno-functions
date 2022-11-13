@@ -24,6 +24,7 @@ interface HistoryItem {
   link: string
 }
 
+// deno-lint-ignore no-explicit-any
 type AnyObject<T = any> = Record<number | string | symbol, T>
 
 // const itemCache = new Map<string, BaikeItem>()
