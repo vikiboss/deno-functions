@@ -7,20 +7,20 @@ Transform `Markdown` into `HTML` string, support many languages' sytax highlight
 ## Usage
 
 ```ts
-const api = 'https://markdown2html.deno.dev';
+const api = 'https://markdown2html.deno.dev'
 
 const markdownContent = `# Hello world
 ## H2
-### H3`;
+### H3`
 
 const res = await fetch(api, {
   method: 'POST',
   body: markdownContent,
-});
+})
 
-const htmlString = res.text();
+const htmlString = res.text()
 
-console.log(htmlString);
+console.log(htmlString)
 ```
 
 ## Languages supporting syntax highlighting

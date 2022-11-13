@@ -1,37 +1,37 @@
-import { render, CSS } from './deps.ts';
+import { render, CSS } from './deps.ts'
 
-import 'https://esm.sh/prismjs@1.27.0/components/prism-bash?no-check';
-import 'https://esm.sh/prismjs@1.27.0/components/prism-c?no-check';
-import 'https://esm.sh/prismjs@1.27.0/components/prism-cpp?no-check';
-import 'https://esm.sh/prismjs@1.27.0/components/prism-csharp?no-check';
-import 'https://esm.sh/prismjs@1.27.0/components/prism-css?no-check';
-import 'https://esm.sh/prismjs@1.27.0/components/prism-dart?no-check';
-import 'https://esm.sh/prismjs@1.27.0/components/prism-diff?no-check';
-import 'https://esm.sh/prismjs@1.27.0/components/prism-docker?no-check';
-import 'https://esm.sh/prismjs@1.27.0/components/prism-git?no-check';
-import 'https://esm.sh/prismjs@1.27.0/components/prism-go?no-check';
-import 'https://esm.sh/prismjs@1.27.0/components/prism-http?no-check';
-import 'https://esm.sh/prismjs@1.27.0/components/prism-ignore?no-check';
-import 'https://esm.sh/prismjs@1.27.0/components/prism-ini?no-check';
-import 'https://esm.sh/prismjs@1.27.0/components/prism-java?no-check';
-import 'https://esm.sh/prismjs@1.27.0/components/prism-json?no-check';
-import 'https://esm.sh/prismjs@1.27.0/components/prism-jsx?no-check';
-import 'https://esm.sh/prismjs@1.27.0/components/prism-kotlin?no-check';
-import 'https://esm.sh/prismjs@1.27.0/components/prism-less?no-check';
-import 'https://esm.sh/prismjs@1.27.0/components/prism-nginx?no-check';
-import 'https://esm.sh/prismjs@1.27.0/components/prism-python?no-check';
-import 'https://esm.sh/prismjs@1.27.0/components/prism-rust?no-check';
-import 'https://esm.sh/prismjs@1.27.0/components/prism-sass?no-check';
-import 'https://esm.sh/prismjs@1.27.0/components/prism-scss?no-check';
-import 'https://esm.sh/prismjs@1.27.0/components/prism-sql?no-check';
-import 'https://esm.sh/prismjs@1.27.0/components/prism-toml?no-check';
-import 'https://esm.sh/prismjs@1.27.0/components/prism-tsx?no-check';
-import 'https://esm.sh/prismjs@1.27.0/components/prism-typescript?no-check';
-import 'https://esm.sh/prismjs@1.27.0/components/prism-yaml?no-check';
+import 'https://esm.sh/prismjs@1.27.0/components/prism-bash?no-check'
+import 'https://esm.sh/prismjs@1.27.0/components/prism-c?no-check'
+import 'https://esm.sh/prismjs@1.27.0/components/prism-cpp?no-check'
+import 'https://esm.sh/prismjs@1.27.0/components/prism-csharp?no-check'
+import 'https://esm.sh/prismjs@1.27.0/components/prism-css?no-check'
+import 'https://esm.sh/prismjs@1.27.0/components/prism-dart?no-check'
+import 'https://esm.sh/prismjs@1.27.0/components/prism-diff?no-check'
+import 'https://esm.sh/prismjs@1.27.0/components/prism-docker?no-check'
+import 'https://esm.sh/prismjs@1.27.0/components/prism-git?no-check'
+import 'https://esm.sh/prismjs@1.27.0/components/prism-go?no-check'
+import 'https://esm.sh/prismjs@1.27.0/components/prism-http?no-check'
+import 'https://esm.sh/prismjs@1.27.0/components/prism-ignore?no-check'
+import 'https://esm.sh/prismjs@1.27.0/components/prism-ini?no-check'
+import 'https://esm.sh/prismjs@1.27.0/components/prism-java?no-check'
+import 'https://esm.sh/prismjs@1.27.0/components/prism-json?no-check'
+import 'https://esm.sh/prismjs@1.27.0/components/prism-jsx?no-check'
+import 'https://esm.sh/prismjs@1.27.0/components/prism-kotlin?no-check'
+import 'https://esm.sh/prismjs@1.27.0/components/prism-less?no-check'
+import 'https://esm.sh/prismjs@1.27.0/components/prism-nginx?no-check'
+import 'https://esm.sh/prismjs@1.27.0/components/prism-python?no-check'
+import 'https://esm.sh/prismjs@1.27.0/components/prism-rust?no-check'
+import 'https://esm.sh/prismjs@1.27.0/components/prism-sass?no-check'
+import 'https://esm.sh/prismjs@1.27.0/components/prism-scss?no-check'
+import 'https://esm.sh/prismjs@1.27.0/components/prism-sql?no-check'
+import 'https://esm.sh/prismjs@1.27.0/components/prism-toml?no-check'
+import 'https://esm.sh/prismjs@1.27.0/components/prism-tsx?no-check'
+import 'https://esm.sh/prismjs@1.27.0/components/prism-typescript?no-check'
+import 'https://esm.sh/prismjs@1.27.0/components/prism-yaml?no-check'
 
 export const md2html = (md: string, pageTitle = '') => {
-  const title = md.match(/^# (.+)\n?/g)?.[0].slice(2) || pageTitle;
-  const body = render(md);
+  const title = md.match(/^# (.+)\n?/g)?.[0].slice(2) || pageTitle
+  const body = render(md)
   const html = `
   <!DOCTYPE html>
   <html lang="en">
@@ -56,6 +56,6 @@ export const md2html = (md: string, pageTitle = '') => {
     </main>
   </body>
 </html>
-`;
-  return html;
-};
+`
+  return html
+}
