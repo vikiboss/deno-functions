@@ -8,6 +8,10 @@ async function handleRequest(request: Request) {
     return await fetchReadmeToHtml(import.meta.url)
   }
 
+  if (url.pathname === '/favicon.ico') {
+    return new Response(null)
+  }
+
   return new Response('[WIP] API for transforming text to image')
 }
 

@@ -11,6 +11,12 @@ const RES_OPTIONS = {
 }
 
 async function handleRequest(request: Request) {
+  const url = new URL(request.url)
+
+  if (url.pathname === '/favicon.ico') {
+    return new Response(null)
+  }
+
   let md = ''
   let title = ''
 

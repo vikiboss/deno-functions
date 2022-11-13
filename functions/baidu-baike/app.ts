@@ -43,6 +43,10 @@ async function handleRequest(request: Request) {
     return await fetchReadmeToHtml(import.meta.url)
   }
 
+  if (url.pathname === '/favicon.ico') {
+    return new Response(null)
+  }
+
   if (pathname === '/today_in_history') {
     const now = new Date()
     const today = dayjs(now).format('YYYY-MM-DD')

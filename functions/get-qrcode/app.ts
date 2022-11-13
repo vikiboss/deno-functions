@@ -9,6 +9,10 @@ async function handleRequest(request: Request) {
   const url = new URL(request.url)
   const params = url.searchParams
 
+  if (url.pathname === '/favicon.ico') {
+    return new Response(null)
+  }
+
   if (!params.get('text')) {
     return await fetchReadmeToHtml(import.meta.url)
   }
