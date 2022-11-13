@@ -2,7 +2,7 @@
 
 [![github-label](https://img.shields.io/badge/gitub-000000?style=for-the-badge&logo=github)](https://github.com/vikiboss/deno-functions/tree/main/functions/get-qrcode)
 
-Get QR code image by passing a `text` parameter and optional `size`.
+Generate a QR code image by passing a `text` parameter and optional `size`.
 
 ## Usage
 

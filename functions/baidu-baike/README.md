@@ -2,7 +2,7 @@
 
 [![github-label](https://img.shields.io/badge/gitub-000000?style=for-the-badge&logo=github)](https://github.com/vikiboss/deno-functions/tree/main/functions/baidu-baike)
 
-百度百科的 `词条信息`、`词条义项列表`、`历史上的今天` API，数据来自百度百科。
+百度百科 `词条信息`、`词条义项列表`、`历史上的今天` API。
 
 支持模糊搜索匹配，比如：https://baidu-baike.deno.dev/item/xiyouji （西游记）
 
