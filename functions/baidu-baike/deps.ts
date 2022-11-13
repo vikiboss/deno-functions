@@ -1,3 +1,2 @@
-import dayjs from 'https://deno.land/x/dayjs@v1.11.6/src/index.js'
-
+import dayjs from 'https://esm.sh/dayjs@1.10.4'
 export { dayjs }
