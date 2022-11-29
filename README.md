@@ -2,7 +2,7 @@
 
 [![github-label](https://img.shields.io/badge/gitub-source%20code-000000?style=for-the-badge&logo=github)](https://github.com/vikiboss/deno-functions)
 
-A set of useful serverless **functions** and **proxies** powered by [Deno](https://deno.land/) and deployed by [Deno Deploy](https://deno.dev/). They're fast!
+A set of useful serverless **functions** powered by [Deno](https://deno.land/) and deployed by [Deno Deploy](https://deno.dev/). They're fast!
 
 ## Functions
 
@@ -17,28 +17,6 @@ A set of useful serverless **functions** and **proxies** powered by [Deno](https
 - [**Generate QR Code API**](https://github.com/vikiboss/deno-functions/tree/main/functions/get-qrcode): http://get-qrcode.deno.dev
 
   Generate QR code image by passing a `text` parameter and optional `size`.
-
-<!-- - [[WIP] **Text to Image**](https://github.com/vikiboss/deno-functions/tree/main/functions/text2img): https://text2img.deno.dev
-
-  Transform `text` into an `image`. -->
-
-## Proxies
-
-- [**GitHub Proxy**](https://github.com/vikiboss/deno-functions/tree/main/functions/gh-proxy): https://gh-proxy.deno.dev/usage
-
-  Proxy for `github.com` to improve your GitHub browsing experience.
-
-- [**GitHub API Proxy**](https://github.com/vikiboss/deno-functions/tree/main/functions/gh-api-proxy): https://gh-api-proxy.deno.dev/usage
-
-  Proxy for `api.github.com`.
-
-- [**raw.githubusercontent.com Proxy**](https://github.com/vikiboss/deno-functions/tree/main/functions/gh-raw-proxy): https://gh-raw-proxy.deno.dev/usage
-
-  Proxy for `raw.githubusercontent.com` to speed up your downloads on GitHub.
-
-- [**Google Search Proxy**](https://github.com/vikiboss/deno-functions/tree/main/functions/google-proxy): https://google-proxy.deno.dev/usage
-
-  Proxy for `www.google.com` (Google Search). Just for temporary usage, don't relay on it.
 
 ## Thanks
 
