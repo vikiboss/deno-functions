@@ -1,7 +1,7 @@
 const linkCache = new Map<string, string>()
 
 const getSuggestApi = (item: string) => {
-  return `https://baike.baidu.com/api/searchui/suggest?wd=${encodeURIComponent(item)}&enc=utf8`
+  return `https://baike.baidu.com/api/searchui/suggest?wd=${item}&enc=utf8`
 }
 
 export const fetchItemLink = async (itemName: string) => {
