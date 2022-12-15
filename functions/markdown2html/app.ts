@@ -1,4 +1,6 @@
-import { path, serve } from '../../deps.ts'
+import { serve } from 'https://deno.land/std@0.161.0/http/server.ts'
+import * as path from 'https://deno.land/std@0.149.0/path/mod.ts'
+
 import { dirname, PORT } from '../../utils/index.ts'
 import { md2html } from './md2html.ts'
 

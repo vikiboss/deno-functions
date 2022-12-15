@@ -1,5 +1,7 @@
-import { serve } from '../../deps.ts'
-import { base64, qrcode } from './deps.ts'
+import { qrcode } from 'https://deno.land/x/qrcode@v2.0.0/mod.ts'
+import * as base64 from 'https://deno.land/x/base64@v0.2.1/mod.ts'
+import { serve } from 'https://deno.land/std@0.161.0/http/server.ts'
+
 import { fetchReadmeToHtml, PORT } from '../../utils/index.ts'
 
 const SLICE_START = 22

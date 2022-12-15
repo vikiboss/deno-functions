@@ -1,8 +1,9 @@
+import { getItemList } from './fetchItemList.ts'
+
 import { ensureLink } from '../utils/ensureLink.ts'
 import { ensureTitle } from '../utils/ensureTitle.ts'
 import { fetchItemLink } from '../utils/fetchItemLink.ts'
-import { getItemList } from './fetchItemList.ts'
-import { responseWithBaseRes } from '../../../utils/responseWithBaseRes.ts'
+import { responseWithBaseRes } from '../utils/responseWithBaseRes.ts'
 
 interface BaikeItem {
   itemName: string

@@ -1,4 +1,5 @@
-import { serve } from './deps.ts'
+import { serve } from 'https://deno.land/std@0.161.0/http/server.ts'
+
 import { fetchReadmeToHtml } from './utils/fetchReadmeToHtml.ts'
 
 const handleRequest = async (request: Request) => {

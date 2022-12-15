@@ -1,5 +1,6 @@
-import { dayjs } from '../deps.ts'
-import { responseWithBaseRes } from '../../../utils/responseWithBaseRes.ts'
+import dayjs from 'https://esm.sh/dayjs@1.10.4'
+
+import { responseWithBaseRes } from '../utils/responseWithBaseRes.ts'
 
 interface HistoryItem {
   title: string

@@ -1,4 +1,5 @@
-import { serve } from '../../deps.ts'
+import { serve } from 'https://deno.land/std@0.161.0/http/server.ts'
+
 import { fetchItem } from './services/fetchItem.ts'
 import { fetchItemList } from './services/fetchItemList.ts'
 import { fetchReadmeToHtml, PORT } from '../../utils/index.ts'
