@@ -15,7 +15,7 @@ export const fetchItemLink = async (itemName: string) => {
 
   if (!item) return ''
 
-  const link = `https://baike.baidu.com/item/${item.lemmaTitle}/${item.lemmaId}`
+  const link = `https://baike.baidu.com/item/${encodeURIComponent(item.lemmaTitle)}/${item.lemmaId}`
 
   linkCache.set(itemName, link)
 

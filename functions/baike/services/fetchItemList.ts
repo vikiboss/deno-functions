@@ -49,7 +49,7 @@ export const getItemList = async (inputItem: string) => {
 
   if (items.length === 0) {
     items.unshift({
-      title: encodeURIComponent(ensureTitle(item)),
+      title: ensureTitle(item),
       link: ensureLink(currentLink, true),
     })
   }
