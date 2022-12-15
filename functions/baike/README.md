@@ -1,25 +1,25 @@
 # 百度百科 API
 
-[![github-label](https://img.shields.io/badge/gitub-000000?style=for-the-badge&logo=github)](https://github.com/vikiboss/deno-functions/tree/main/functions/baidu-baike)
+[![github-label](https://img.shields.io/badge/gitub-000000?style=for-the-badge&logo=github)](https://github.com/vikiboss/deno-functions/tree/main/functions/baike)
 
 百度百科 `词条信息`、`词条义项列表`、`历史上的今天` API。
 
-支持模糊搜索匹配，比如：https://baidu-baike.deno.dev/item/xiyouji （西游记）
+支持模糊搜索匹配，比如：https://baike.deno.dev/item/xiyouji （西游记）
 
 ## 用法
 
 - 词条信息
-  - JSON: https://baidu-baike.deno.dev/item/UFO
-  - Text: https://baidu-baike.deno.dev/item/UFO?encoding=text
+  - JSON: https://baike.deno.dev/item/UFO
+  - Text: https://baike.deno.dev/item/UFO?encoding=text
 - 词条列表
-  - JSON: https://baidu-baike.deno.dev/item_list/UFO
-  - Text: https://baidu-baike.deno.dev/item_list/UFO&encoding=text
+  - JSON: https://baike.deno.dev/item_list/UFO
+  - Text: https://baike.deno.dev/item_list/UFO?encoding=text
 - 历史上的今天
-  - JSON: https://baidu-baike.deno.dev/today_in_history
-  - Text: https://baidu-baike.deno.dev/today_in_history?encoding=text
+  - JSON: https://baike.deno.dev/today_in_history
+  - Text: https://baike.deno.dev/today_in_history?encoding=text
 
 ```ts
-const api = 'https://baidu-baike.deno.dev'
+const api = 'https://baike.deno.dev'
 
 // 通过 `词条名` 搜索并获取词条信息
 const item = 'UFO'

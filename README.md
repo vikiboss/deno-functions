@@ -6,7 +6,7 @@ A set of useful serverless **functions** powered by [Deno](https://deno.land/) a
 
 ## Functions
 
-- [**Baidu Wiki API**](https://github.com/vikiboss/deno-functions/tree/main/functions/baidu-baike): https://baidu-baike.deno.dev
+- [**Baidu Wiki API**](https://github.com/vikiboss/deno-functions/tree/main/functions/baike): https://baike.deno.dev
 
   百度百科 API，获取词条信息、词条义项列表、历史上的今天。
 
