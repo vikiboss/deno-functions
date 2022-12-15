@@ -1,26 +1,23 @@
-import { ensureLink } from './ensureLink.ts'
-
 const linkCache = new Map<string, string>()
-const ResultLinkReg = /J-result-title" href="(.*)" target="/
 
-const getSearchApi = (item: string) => {
-  return `https://baike.baidu.com/search?word=${item}`
+const getSuggestApi = (item: string) => {
+  return `https://baike.baidu.com/api/searchui/suggest?wd=${encodeURIComponent(item)}&enc=utf8`
 }
 
-export const fetchItemLink = async (item: string) => {
-  if (linkCache.has(item)) {
-    return linkCache.get(item) || ''
+export const fetchItemLink = async (itemName: string) => {
+  if (linkCache.has(itemName)) {
+    return linkCache.get(itemName) || ''
   }
 
-  const data = await fetch(getSearchApi(item))
-  const html = await data.text()
+  const res = await fetch(getSuggestApi(itemName))
+  const { list } = await res.json()
+  const item = list[0]
 
-  const link = ensureLink(ResultLinkReg.exec(html)?.[1] || '')
+  if (!item) return ''
 
-  if (link) {
-    linkCache.set(item, link)
-    return link
-  }
+  const link = `https://baike.baidu.com/item/${item.lemmaTitle}/${item.lemmaId}`
 
-  return ''
+  linkCache.set(itemName, link)
+
+  return link
 }
