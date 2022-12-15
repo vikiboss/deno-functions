@@ -3,12 +3,7 @@
     "dev:root": "deno run --allow-all --watch ./app.ts",
     "dev:baidu-baike": "deno run --allow-all --watch ./functions/baidu-baike/app.ts",
     "dev:get-qrcode": "deno run --allow-all --watch ./functions/get-qrcode/app.ts",
-    "dev:gh-proxy": "deno run --allow-all --watch ./functions/gh-proxy/app.ts",
-    "dev:gh-api-proxy": "deno run --allow-all --watch ./functions/gh-api-proxy/app.ts",
-    "dev:gh-raw-proxy": "deno run --allow-all --watch ./functions/gh-raw-proxy/app.ts",
-    "dev:google-proxy": "deno run --allow-all --watch ./functions/google-proxy/app.ts",
-    "dev:markdown2html": "PORT=3000 deno run --allow-all --watch ./functions/markdown2html/app.ts",
-    "dev:text2img": "deno run --allow-all --watch ./functions/text2img/app.ts"
+    "dev:markdown2html": "PORT=3000 deno run --allow-all --watch ./functions/markdown2html/app.ts"
   },
   "lint": {
     "rules": {
