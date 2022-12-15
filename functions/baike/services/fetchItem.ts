@@ -36,7 +36,7 @@ export const fetchItem = async (item: string, n: string | null, encoding = 'json
 
   let link = ''
 
-  if (n === null) {
+  if (!n) {
     link = await fetchItemLink(item)
 
     if (!link) {
