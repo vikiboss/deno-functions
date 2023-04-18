@@ -47,7 +47,7 @@ export const fetchTodayInHistory = async (encoding = 'json') => {
 
   const res = await fetch(getHistoryApi())
   const monthEvents: AnyObject<AnyObject<AnyObject[]>> = await res.json()
-  const todayEvents = monthEvents?.[String(now.month() + 1)]?.[todayField] ?? []
+  const todayEvents = monthEvents?.[String(now.format('MM'))]?.[todayField] ?? []
 
   todayEvents.sort((a, b) => a.year - b.year)
 
