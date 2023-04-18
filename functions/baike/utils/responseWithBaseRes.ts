@@ -13,7 +13,15 @@ export const responseWithBaseRes = (
 
   return new Response(res, {
     headers: {
-      'Content-Type': 'application/json',
+      'Content-Type': 'application/json; charset=utf-o',
     },
   })
+}
+
+export function transferText(str: string, mode: 'u2a' | 'a2u') {
+  if (mode === 'a2u') {
+    return str.replace(/&#(\d+);/g, (_, $1) => String.fromCharCode(Number($1)))
+  } else {
+    return str.replace(/./, (_) => `&#${_.charCodeAt(0)};`)
+  }
 }
