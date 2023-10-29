@@ -16,11 +16,11 @@ interface BaikeItem {
 const itemCache = new Map<string, BaikeItem>()
 
 const Regs = [
-  /og:title" content="(.*)"/,
-  /og:image" content="(.*)"/,
-  /og:description" content="(.*)"/,
-  /og:url" content="(.*)"/,
-  /dateUpdate" content="(.*)"/,
+  /og:title" content="([^\"]+)"/,
+  /og:image" content="([^\"]+)"/,
+  /og:description" content="([^\"]+)"/,
+  /og:url" content="([^\"]+)"/,
+  /dateUpdate" content="([^\"]+)"/,
 ]
 
 export const fetchItem = async (item: string, n: string | null, encoding = 'json') => {

@@ -13,7 +13,7 @@ export const responseWithBaseRes = (
 
   return new Response(res, {
     headers: {
-      'Content-Type': 'application/json; charset=utf-o',
+      'content-type': 'application/json; charset=utf-8',
     },
   })
 }
