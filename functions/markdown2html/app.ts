@@ -1,4 +1,3 @@
-import { serve } from 'https://deno.land/std@0.161.0/http/server.ts'
 import * as path from 'https://deno.land/std@0.149.0/path/mod.ts'
 
 import { dirname, PORT } from '../../utils/index.ts'
@@ -32,4 +31,4 @@ async function handleRequest(request: Request) {
   return new Response(md2html(md, title), RES_OPTIONS)
 }
 
-serve(handleRequest, { port: PORT })
+Deno.serve(handleRequest, { port: PORT })

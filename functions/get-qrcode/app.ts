@@ -1,6 +1,5 @@
 import { qrcode } from 'https://deno.land/x/qrcode@v2.0.0/mod.ts'
 import * as base64 from 'https://deno.land/x/base64@v0.2.1/mod.ts'
-import { serve } from 'https://deno.land/std@0.161.0/http/server.ts'
 
 import { fetchReadmeToHtml, PORT } from '../../utils/index.ts'
 
@@ -15,7 +14,7 @@ async function handleRequest(request: Request) {
     return new Response(null)
   }
 
-  const text = params.get('text') || ''
+  const text = decodeURIComponent(params.get('text') || '')
 
   if (!text) {
     return await fetchReadmeToHtml(import.meta.url)
@@ -31,4 +30,4 @@ async function handleRequest(request: Request) {
   return new Response(isBase64 ? image : base64.toUint8Array(image.slice(SLICE_START)))
 }
 
-serve(handleRequest, { port: PORT })
+Deno.serve(handleRequest, { port: PORT })
