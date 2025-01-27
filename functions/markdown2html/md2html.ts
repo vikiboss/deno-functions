@@ -1,4 +1,4 @@
-import { CSS, render } from 'jsr:@deno/gfm@0.10.0'
+import { CSS, render } from 'jsr:@deno/gfm@0.8.0'
 
 import 'https://esm.sh/prismjs@1.29.0/components/prism-bash?no-check'
 import 'https://esm.sh/prismjs@1.29.0/components/prism-c?no-check'

@@ -2,6 +2,9 @@
   "version": "4",
   "specifiers": {
     "jsr:@deno/gfm@0.10.0": "0.10.0",
+    "jsr:@deno/gfm@0.6.0": "0.6.0",
+    "jsr:@deno/gfm@0.8.0": "0.8.0",
+    "jsr:@deno/gfm@0.9.0": "0.9.0",
     "jsr:@denosaurs/emoji@0.3": "0.3.1",
     "npm:@types/node@*": "22.5.4",
     "npm:github-slugger@2": "2.0.0",
@@ -11,10 +14,56 @@
     "npm:marked-footnote@^1.2.0": "1.2.4_marked@12.0.2",
     "npm:marked-gfm-heading-id@^3.1.0": "3.2.0_marked@12.0.2",
     "npm:marked@12": "12.0.2",
+    "npm:marked@^11.1.0": "11.2.0",
     "npm:prismjs@^1.29.0": "1.29.0",
+    "npm:sanitize-html@^2.11.0": "2.14.0",
     "npm:sanitize-html@^2.13.0": "2.14.0"
   },
   "jsr": {
+    "@deno/gfm@0.6.0": {
+      "integrity": "e536de096af34e3c497b96b701aa6f2be48fa1b0b5d12f8c0ffdca8ad663a11b",
+      "dependencies": [
+        "npm:github-slugger",
+        "npm:he",
+        "npm:katex",
+        "npm:marked-alert",
+        "npm:marked-footnote",
+        "npm:marked-gfm-heading-id",
+        "npm:marked@^11.1.0",
+        "npm:prismjs",
+        "npm:sanitize-html@^2.11.0"
+      ]
+    },
+    "@deno/gfm@0.8.0": {
+      "integrity": "c4cec6b457e7ef8d826e5efbd2ffee7d5a2a29cf4e2fa5da9fbda180442f2847",
+      "dependencies": [
+        "jsr:@denosaurs/emoji",
+        "npm:github-slugger",
+        "npm:he",
+        "npm:katex",
+        "npm:marked-alert",
+        "npm:marked-footnote",
+        "npm:marked-gfm-heading-id",
+        "npm:marked@^11.1.0",
+        "npm:prismjs",
+        "npm:sanitize-html@^2.11.0"
+      ]
+    },
+    "@deno/gfm@0.9.0": {
+      "integrity": "9002dbdb6e382e247509edfeae3afdb9232f5ca98a8210ef186d42084e9ded30",
+      "dependencies": [
+        "jsr:@denosaurs/emoji",
+        "npm:github-slugger",
+        "npm:he",
+        "npm:katex",
+        "npm:marked-alert",
+        "npm:marked-footnote",
+        "npm:marked-gfm-heading-id",
+        "npm:marked@12",
+        "npm:prismjs",
+        "npm:sanitize-html@^2.11.0"
+      ]
+    },
     "@deno/gfm@0.10.0": {
       "integrity": "51708205e3559a4aeb6afb29d07c5bfafe7941f91bb360351ef6621de9a39527",
       "dependencies": [
@@ -22,12 +71,12 @@
         "npm:github-slugger",
         "npm:he",
         "npm:katex",
-        "npm:marked",
         "npm:marked-alert",
         "npm:marked-footnote",
         "npm:marked-gfm-heading-id",
+        "npm:marked@12",
         "npm:prismjs",
-        "npm:sanitize-html"
+        "npm:sanitize-html@^2.13.0"
       ]
     },
     "@denosaurs/emoji@0.3.1": {
@@ -105,21 +154,24 @@
     "marked-alert@2.1.2_marked@12.0.2": {
       "integrity": "sha512-EFNRZ08d8L/iEIPLTlQMDjvwIsj03gxWCczYTht6DCiHJIZhMk4NK5gtPY9UqAYb09eV5VGT+jD4lp396E0I+w==",
       "dependencies": [
-        "marked"
+        "marked@12.0.2"
       ]
     },
     "marked-footnote@1.2.4_marked@12.0.2": {
       "integrity": "sha512-DB2Kl+wFh6YwZd70qABMY6WUkG1UuyqoNTFoDfGyG79Pz24neYtLBkB+45a7o72V7gkfvbC3CGzIYFobxfMT1Q==",
       "dependencies": [
-        "marked"
+        "marked@12.0.2"
       ]
     },
     "marked-gfm-heading-id@3.2.0_marked@12.0.2": {
       "integrity": "sha512-Xfxpr5lXLDLY10XqzSCA9l2dDaiabQUgtYM9hw8yunyVsB/xYBRpiic6BOiY/EAJw1ik1eWr1ET1HKOAPZBhXg==",
       "dependencies": [
         "github-slugger",
-        "marked"
+        "marked@12.0.2"
       ]
+    },
+    "marked@11.2.0": {
+      "integrity": "sha512-HR0m3bvu0jAPYiIvLUUQtdg1g6D247//lvcekpHO1WMvbwDlwSkZAX9Lw4F4YHE1T0HaaNve0tuAWuV1UJ6vtw=="
     },
     "marked@12.0.2": {
       "integrity": "sha512-qXUm7e/YKFoqFPYPa3Ukg9xlI5cyAtGmyEIzMfW//m6kXwCy2Ps9DYf5ioijFKQ8qyuscrHoY04iJGctu2Kg0Q=="
