@@ -1,4 +1,4 @@
-import * as path from 'https://deno.land/std@0.149.0/path/mod.ts'
+import * as path from 'node:path'
 
 import { dirname, PORT } from '../../utils/index.ts'
 import { md2html } from './md2html.ts'
@@ -11,7 +11,7 @@ const RES_OPTIONS = {
   },
 }
 
-async function handleRequest(request: Request) {
+Deno.serve({ port: PORT, hostname: 'localhost' }, async (request: Request) => {
   const url = new URL(request.url)
 
   if (url.pathname === '/favicon.ico') {
@@ -29,6 +29,4 @@ async function handleRequest(request: Request) {
   }
 
   return new Response(md2html(md, title), RES_OPTIONS)
-}
-
-Deno.serve(handleRequest, { port: PORT })
+})

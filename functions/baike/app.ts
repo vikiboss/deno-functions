@@ -1,9 +1,9 @@
 import { fetchItem } from './services/fetchItem.ts'
 import { fetchItemList } from './services/fetchItemList.ts'
-import { fetchReadmeToHtml, PORT } from '../../utils/index.ts'
+import { fetchReadmeToHtml } from '../../utils/index.ts'
 import { fetchTodayInHistory } from './services/fetchTodayInHistory.ts'
 
-async function handleRequest(request: Request) {
+Deno.serve(async (request: Request) => {
   const url = new URL(request.url)
   const pathname = url.pathname
   const params = url.searchParams
@@ -36,6 +36,4 @@ async function handleRequest(request: Request) {
   }
 
   return await fetchReadmeToHtml(import.meta.url)
-}
-
-Deno.serve(handleRequest, { port: PORT })
+})
