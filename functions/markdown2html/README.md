@@ -6,8 +6,15 @@ Transform `Markdown` (GFM) into pretty `HTML` string, [click here to preview ful
 
 ## Usage
 
+Just send a `POST` request to the API with the markdown content in the body.
+
+### Node.js
+
 ```ts
-const api = 'https://markdown2html.deno.dev'
+const api = 'https://md2html.viki.moe'
+
+// or use the deno deploy domain
+// const api = 'https://markdown2html.deno.dev'
 
 const markdownContent = `# Hello world
 ## H2
@@ -23,11 +30,32 @@ const htmlString = res.text()
 console.log(htmlString)
 ```
 
+### Python
+
+```python
+import requests
+
+api = 'https://md2html.viki.moe'
+
+# or use the deno deploy domain
+# api = 'https://markdown2html.deno.dev'
+
+markdown_content = '''# Hello world
+## H2
+### H3'''
+
+res = requests.post(api, data=markdown_content)
+
+html_string = res.text
+
+print(html_string)
+```
+
 ## Languages supporting syntax highlighting
 
 `bash`, `c`, `cpp`, `csharp`, `css`, `dart`, `diff`, `docker`, `git`, `go`, `http`, `ignore`, `ini`, `java`, `javascript`, `json`, `jsx`, `kotlin`, `less`, `nginx`, `python`, `rust`, `sass`, `scss`, `sql`, `toml`, `tsx`, `typescript`, `yaml`, `zig`
 
-[⬅ back to list](https://viki.deno.dev/)
+[⬅ back to API list](https://viki.deno.dev/)
 
 ---
 
