@@ -3,7 +3,7 @@
     "dev:root": "deno run --allow-all --watch ./app.ts",
     "dev:baike": "deno run --allow-all --watch ./functions/baike/app.ts",
     "dev:qrcode": "deno run --allow-all --watch ./functions/get-qrcode/app.ts",
-    "dev:md2html": "PORT=3000 deno run --allow-all --watch ./functions/markdown2html/app.ts"
+    "dev:md2html": "PORT=3888 deno run --allow-all --watch ./functions/markdown2html/app.ts"
   },
   "lint": {
     "rules": {
